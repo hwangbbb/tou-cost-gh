@@ -1,0 +1,16 @@
+# Grasshopper / Rhino backups
+*.ghx.bak
+*.gh.bak
+*.3dmbak
+# EnergyPlus outputs, never commit these
+*.sql
+*.eso
+*.err
+*.eio
+*.mtr
+*.rdd
+*.mdd
+eplusout*
+# OS
+.DS_Store
+Thumbs.db

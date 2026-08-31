@@ -1,0 +1,30 @@
+{
+  "id": "coned_large_business_tou",
+  "utility": "Consolidated Edison Company of New York, Inc.",
+  "rate_name": "Large Business Time-of-Use Rate",
+  "charge_basis": "delivery, demand-based",
+  "source_url": "https://www.coned.com/en/accounts-billing/your-bill/time-of-use",
+  "source_section": "Large Business Rate",
+  "retrieved": "2026-08-31",
+  "currency": "USD",
+  "structure_note": "Delivery charges are the sum of the maximum kW in each of three periods multiplied by that period's rate. This is a stacked multi-period demand tariff, not an energy (per kWh) tariff.",
+  "demand_charges_per_kw": {
+    "summer": {
+      "date_range": "June 1 to September 30",
+      "weekday_8_to_18": 12.75,
+      "weekday_8_to_22": 28.64,
+      "all_hours_all_days": 27.33
+    },
+    "winter": {
+      "date_range": "All other months",
+      "weekday_8_to_18": null,
+      "weekday_8_to_22": 18.15,
+      "all_hours_all_days": 7.04
+    }
+  },
+  "fixed_charges": {
+    "monthly_customer_charge": 72.00
+  },
+  "component_support": "PARTIAL. The component's demand_rate_ input applies a single $/kW to the monthly peak. It does not stack three coincident-period peaks. Use it as a first-order screen only, or extend the script. See README, Limitations.",
+  "source_transcription_note": "The Con Edison page lists the winter 8 a.m. to 10 p.m. value with a per kWh unit. Given the column heading and the other values, this is almost certainly a typo for per kW. Verify against the tariff (PSC No. 10, SC 9) before use."
+}

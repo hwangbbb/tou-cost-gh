@@ -1,0 +1,50 @@
+{
+  "id": "coned_small_business_tou",
+  "utility": "Consolidated Edison Company of New York, Inc.",
+  "rate_name": "Small Business Time-of-Use Rate",
+  "service_territory": "New York City and Westchester County",
+  "charge_basis": "delivery",
+  "basis_note": "Con Edison presents these as the TOU alternative to its Standard Delivery Periods table. Electric supply is purchased in competitive markets and billed separately. Surcharges, taxes, and General Rule 30 adjustments are not included. Result will not match a bill.",
+  "source_url": "https://www.coned.com/en/accounts-billing/your-bill/time-of-use",
+  "source_section": "Small Business Rate",
+  "retrieved": "2026-08-31",
+  "currency": "USD",
+  "energy_charges_per_kwh": {
+    "summer": {
+      "months": [6, 7, 8, 9],
+      "date_range": "June 1 to September 30",
+      "peak": 0.5443,
+      "off_peak": 0.0199
+    },
+    "winter": {
+      "months": [1, 2, 3, 4, 5, 10, 11, 12],
+      "date_range": "All other months",
+      "peak": 0.2680,
+      "off_peak": 0.0199
+    }
+  },
+  "peak_period": {
+    "days": "Monday through Friday",
+    "start_hour": 8,
+    "end_hour_exclusive": 22,
+    "description": "8 a.m. to 10 p.m. Off-peak is all other hours of the week."
+  },
+  "fixed_charges": {
+    "monthly_customer_charge": 34.00
+  },
+  "comparison_standard_rate": {
+    "note": "Standard (non-TOU) small business delivery rate from the same page, for reference only",
+    "summer_per_kwh": 0.2038,
+    "winter_per_kwh": 0.1719,
+    "monthly_customer_charge": 33.00
+  },
+  "component_inputs": {
+    "peak_summer_": 0.5443,
+    "peak_winter_": 0.2680,
+    "offpeak_": 0.0199,
+    "summer_mo_": [6, 7, 8, 9],
+    "peak_hrs_": [8, 22],
+    "monthly_charge_": 34.00
+  },
+  "enrollment_note": "Switching off TOU back to the Standard Small Business Rate bars re-enrollment for 18 months."
+}
