@@ -2,7 +2,7 @@
 
 A single Grasshopper component that prices an EnergyPlus hourly load profile against a time-of-use utility tariff. Feed it the 8,760 hourly electricity (and optionally gas) values that Ladybug Tools reads from an `eplusout.sql`, and it returns annual cost, cost by rate period, an hourly cost collection for LB Hourly Plot and LB Monthly Chart, and monthly peak demand.
 
-Built for Ladybug Tools 1.x in Rhino 8. Works in the Rhino 8 Python 3 component, the IronPython 2 component, and legacy GhPython, because it never handles a Ladybug object directly. See Notes on engines.
+Built for Ladybug Tools 1.10.0 in Rhino 8. Works in the Rhino 8 Python 3 component, the IronPython 2 component, and legacy GhPython, because it never handles a Ladybug object directly. See Notes on engines.
 
 ## Why this exists
 
